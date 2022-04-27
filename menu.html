@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Page</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li class="mobile"><a href="locations.html">Locations</a></li>
+                    <li class="mobile"><a href="contacts.html">Contact</a></li>
+                    <li class="logo"><a href="index.html">Mimi Kawaii</a></li>
+                    <li class="desktop"><a href="locations.html">Locations</a></li>
+                    <li class="desktop"><a href="contacts.html">Contact</a></li>
+                    <li class="desktop"><a href="about.html">About us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="container mt-4">
+          <div id = "header"></div>
+          <div id = "gallery" class="row row-cols-md-3"></div>
+              <!---Modal --->
+              <div class="modal fade bg-dark" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content bd-info">
+        
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Image Gallery with Carousel</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+        
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                    
+                        
+                        <!-- Carousel -->
+                        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        
+                          <!-- Indicators/dots -->
+                          <div id='divButton' class="carousel-indicators">
+                            
+                          </div>
+        
+                          <!-- The slideshow/carousel -->
+                          <div id='divSlide' class="carousel-inner">
+         
+                          </div>
+        
+                          <!-- Left and right controls/icons -->
+                          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                          </button>
+                        </div>
+        
+                      <!---End Carousel --->
+                    </div>
+        
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <h4><img src="img/logo.png" style="width:100px"></h4>
+                    </div>
+        
+                  </div>
+                </div>
+              </div>
+            
+        </main>
+        <footer>
+          123 Main Street Edwardsville, IL • 555-555-5555 • us@me.com
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
