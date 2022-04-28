@@ -7,8 +7,8 @@ body {
 }
 /* HEADER */
 header {
-    background-color: black;
-    background-image: url("img/background.jpg");
+    background-image: url("img/banner.jpg");
+    background-color: pink;
     background-size: 100%;
     background-position: center;
     height: 400px;
@@ -36,17 +36,8 @@ header a:hover {
 header .mobile {
     display: none;
 }
-header .logo a {
-    background-image: url("/img/logo.png");
-    background-size: 300px;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    display: block;
-    height: 500px;
-    position: relative;
-    text-indent: -999999px;
-    top: -90px;
-    width: 300px;
+.logo img {
+    width: 450px;
 }
 
 h3 {
@@ -96,13 +87,10 @@ nav li {
         display: none;
     }
 @media screen and (max-width: 750px) {
-    header .logo a {
-        background-size: 200px;
-        position: relative;
-        top: -40px;
-        width: 300px;
-        left: -1%;
+    .logo img{
+        width: 250px;
     }
+    
 }
 
 }
