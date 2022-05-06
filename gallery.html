@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>My Page</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gallery</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <script src="https://kit.fontawesome.com/a46f5f7656.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
@@ -10,19 +13,15 @@
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Raleway:wght@450&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="wrapper">
-            <input type="text" class="input" placeholder="Search...">
-            <div class="searchbtn">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-        </div>
         <header>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="menu.html">Menu</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
-                    <li class="desktop"><a href="about.html">About us</a></li>
+                    <li class="desktop"><a href="ingredients.html">Ingredients</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About us</a></li>
                 </ul>
             </nav>
             <div>
@@ -31,39 +30,70 @@
                 </a>
             </div>
         </header>
-        <h3>Popular Products</h3>
-        <section class="features">
-            <figure>
-                <img src="img/cooke.jpg" alt="cookies">
-                <figcaption>Cookies</figcaption>
-            </figure>
-            <figure>
-                <img src="img/fish.jpg" alt="fish">
-                <figcaption>Taiyaki</figcaption>
-            </figure>
-            <figure>
-                <img src="img/macaroons.jpg" alt="cookies">
-                <figcaption>Macaroons</figcaption>
-            </figure>
-            <figure>
-                <img src="img/mochi.jpg" alt="mochi">
-                <figcaption>Mochi</figcaption>
-            </figure>
-            <figure>
-                <img src="img/pancakes.jpg" alt="pancakes">
-                <figcaption>Pancakes</figcaption>
-            </figure>
-        </section>
-        <div class="container2" type="text">
-            <h4>Welcome to our small bakery. We make homemade sweets from scratch and we also take custom orders.
-                We've only posted our most popular items in our websites Menu page, but we can also take other 
-                orders. We can bake variety type of sweets from anywhere in the world.
-            </h4>
-        </div>
+        <h3 class="page-title">Gallery with carousel</h3>
+       <main class="container mt-4">
+           <div id="header"></div>
+           <div id="gallery" class="row row-cols-md-3"></div>
+                    <!---Modal --->
+                <div class="modal fade bg-dark" id="myModal">
+                    <div class="modal-dialog">
+                    <div class="modal-content bd-info">
+            
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                        <h4 class="modal-title">Image Gallery with Carousel</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+            
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                        
+                            
+                            <!-- Carousel -->
+                            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            
+                            <!-- Indicators/dots -->
+                            <div id='divButton' class="carousel-indicators">
+                                
+                            </div>
+            
+                            <!-- The slideshow/carousel -->
+                            <div id='divSlide' class="carousel-inner">
+            
+                            </div>
+            
+                            <!-- Left and right controls/icons -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                            </div>
+            
+                        <!---End Carousel --->
+                        </div>
+            
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                        <h4><img src="img/logo.png" style="width:100px"></h4>
+                        </div>
+            
+                    </div>
+                    </div>
+                </div>
+       </main>
        <footer>
-           123 Main Street Edwardsville, IL • 555-555-5555 • us@me.com
+        123 Main Street Edwardsville, IL • 555-555-5555 • us@me.com <br>
+        <a href="index.html">Home</a><br>
+        <a href="menu.html">Our desserts</a> <br>
+        <a href="gallery.html">Gallery with carousel</a><br>
+        <a href="ingredients.html">Ingredients</a><br>
+        <a href="portfolio.html">The creator of the website</a><br>
+        <a href="about.html">About this website</a><br>
+        <a href="https://thesmartlocal.com/japan/japanese-desserts/">Japanese Desserts Recipes</a>
        </footer>
-
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
        <script src="js/script.js"></script>
     </body>
 </html>
